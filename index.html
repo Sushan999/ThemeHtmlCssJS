@@ -9,18 +9,79 @@
 </head>
 <body>
     <nav>
-        <div class ="logo">
+        <div class="logo">
             <h1>Porsche</h1>
             <img src="logo.png" sizes="32x32" alt="logo">
         </div>
-        <div class = "links">
+        <div class="links">
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About Us</a></li>
-                <li><a href="">Models</a></li>
-                <li><a href="">Contact us</a></li>
+                <li><a href="#slideshow">Home</a></li>
+                
+                <li><a href="#models">Models</a></li>
+                <li><a href="#contact">Contact us</a></li>
+                <li id="dark-mode-toggle">Change theme</li>
+            </ul>
             </ul>
         </div>
     </nav>
+
+    <div id="slideshow">
+        <div class="bgimage">
+            <img src="slideshow2.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        <div class="bgimage">
+            <img src="slideshow1.jpg" alt="">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores dolorum harum laudantium sed hic distinctio!</p>
+        </div>
+        <button id="prev" onclick="changeSlide(-1)">❮</button>
+        <button id="next" onclick="changeSlide(1)">❯</button>
+    </div>
+
+    <div id ="models">
+        <div class ="modelcontainer">
+            <h1>Porsche 911</h1>
+            <img src="home1.png" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptas expedita ex totam illum aspernatur!</p>
+        </div>
+        <div class ="modelcontainer">
+            <h1>Porsche 912</h1>
+            <img src="home2.png" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptas expedita ex totam illum aspernatur!</p>
+        </div>
+    </div> <br>
+    <section id="contact">
+        <h1 class="h-primary class">Contact Us</h1>
+            <div id="contact-box">
+                <form action="">
+                    <div class="form-group">
+                        <label for = "name">Name:</label>
+                        <input type ="text" name = "name" id="name0" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for = "email">Email:</label>
+                        <input type ="email" name = "name" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for = "phone">Phone no:</label>
+                        <input type ="phone" name = "name" id="phone" placeholder="Enter your phone">
+                    </div>
+                    <div class="form-group">
+                        <label for = "message">Message:</label>
+                        <textarea name="message" id ="message" cols="30" rows="10"></textarea>
+                    </div>
+                </form>
+                <button class="btn" >Submit !</button>
+            </div>
+            
+
+        
+    </section>
+    <footer>
+        <div class="center">
+            Copyright &copy; www.PorscheOfficial.com. All rights reserved!
+        </div>
+    
+    <script src="script.js"></script>
 </body>
 </html>
